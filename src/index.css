@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #00f2fe;      /* Laser Cyan */
+  --color-secondary: #4facfe;    /* Electric Blue */
+  --color-dark-bg: #0a0f1d;     /* Deep Space Dark */
+  --color-card-bg: #111a2e;     /* Solid Layer Card Dark */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-dark-bg);
+  color: #f3f4f6;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom glow element effects used in cards */
+.glow-card {
+  position: relative;
+  transition: all 0.3s ease;
+}
+.glow-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: 0 0 20px 0px rgba(0, 242, 254, 0.15);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+.glow-card:hover::after {
+  opacity: 1;
+}
