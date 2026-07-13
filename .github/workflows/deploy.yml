@@ -4,6 +4,7 @@ on:
   push:
     branches: 'main'
 
+# Explicitly declare permissions at the workflow root
 permissions:
   contents: read
   pages: write
@@ -19,6 +20,11 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    # Re-verify permissions inside the deployment runner instance
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -26,7 +32,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22 # Updated to Node 22 to clear deprecation alerts smoothly
           cache: 'npm'
 
       - name: Install Dependencies
