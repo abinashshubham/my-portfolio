@@ -1,8 +1,8 @@
 /* Core Navigation Structural Blur Layer */
 .nav-blur-container {
-  background-color: rgba(10, 15, 29, 0.7);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
+  background-color: rgba(10, 15, 29, 0.7) !important;
+  backdrop-filter: blur(24px) !important;
+  /* -webkit-backdrop-filter: blur(24px); */
 }
 
 /* Premium Desktop Hover Accent Line */

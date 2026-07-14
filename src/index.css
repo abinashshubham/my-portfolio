@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@theme {
+:root {
   --color-primary: #00f2fe;      /* Laser Cyan */
   --color-secondary: #4facfe;    /* Electric Blue */
   --color-dark-bg: #0a0f1d;     /* Deep Space Dark */
