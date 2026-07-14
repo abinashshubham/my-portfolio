@@ -1,4 +1,3 @@
-// src/components/HeroSection.jsx
 import React from "react";
 import { ArrowRight, Download } from "lucide-react";
 import "./HeroSection.css";
