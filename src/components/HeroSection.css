@@ -1,0 +1,39 @@
+/* Background Accent Ambient Glow Positions */
+.hero-blob-top {
+  transform: translateX(-50%);
+  background-color: rgba(0, 242, 254, 0.1);
+}
+
+.hero-blob-bottom {
+  transform: translateX(50%);
+  background-color: rgba(79, 172, 254, 0.1);
+}
+
+/* Premium Infinite Typing & Blinking Cursor Animation */
+.typing-container {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+}
+
+.typing-text {
+  position: relative;
+  white-space: nowrap;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to right, #00f2fe, #2575fc, #4facfe);
+  animation: typing-effect 8s steps(15) infinite;
+  overflow: hidden;
+  border-right: 3px solid #00f2fe;
+}
+
+/* Keyframes controlling step-by-step lettering typing loop */
+@keyframes typing-effect {
+  0%, 100% {
+    width: 0;
+  }
+  30%, 70% {
+    width: 100%;
+  }
+}
