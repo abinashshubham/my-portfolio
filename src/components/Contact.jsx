@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Mail, MapPin, Send, CheckCircle2 } from "lucide-react";
+import { Mail, MapPin, Send, Phone, CheckCircle2 } from "lucide-react";
 import "./Contact.css";
 
 const Contact = () => {
@@ -18,7 +18,7 @@ const Contact = () => {
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        body: formData
+        body: formData,
       });
 
       const data = await response.json();
@@ -62,6 +62,24 @@ const Contact = () => {
               <p className="text-sm font-bold text-gray-200 mt-0.5">
                 abinashshubham@gmail.com
               </p>
+            </div>
+          </div>
+
+          {/* Clean Phone Component Block */}
+          <div className="bg-[#111a2e] border border-gray-800/80 p-6 rounded-2xl flex items-center gap-4">
+            <div className="p-3.5 rounded-xl bg-[#0a0f1d] text-[#2575fc] border border-gray-800 shrink-0">
+              <Phone size={20} />
+            </div>
+            <div>
+              <span className="text-[10px] text-gray-500 font-bold uppercase tracking-wider block">
+                Voice Contact
+              </span>
+              <a 
+                href="tel:+918789935741" 
+                className="text-sm font-bold text-gray-200 mt-0.5 hover:text-[#00f2fe] transition-colors duration-200"
+              >
+                +91 87899 35741
+              </a>
             </div>
           </div>
 
@@ -125,7 +143,8 @@ const Contact = () => {
                 disabled={isSubmitting}
                 className="w-full sm:w-max px-6 py-3.5 rounded-xl bg-gradient-to-r from-[#00f2fe] to-[#4facfe] text-[#0a0f1d] font-bold text-xs uppercase tracking-widest flex items-center justify-center gap-2 cursor-pointer shadow-lg shadow-[#00f2fe]/10 hover:shadow-[#00f2fe]/20 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                <Send size={14} /> {isSubmitting ? "Dispatching..." : "Dispatch Message"}
+                <Send size={14} />{" "}
+                {isSubmitting ? "Dispatching..." : "Dispatch Message"}
               </button>
 
               {/* Status Notifications */}
