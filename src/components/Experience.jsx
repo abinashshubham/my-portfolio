@@ -1,18 +1,19 @@
 import React from "react";
+import "./Experience.css"; 
 
 const Experience = () => {
   const works = [
     {
-      role: "Frontend Architect Engineer",
-      place: "TechSolutions Software",
-      time: "2025 - Present",
-      text: "Developing modular, highly responsive site components. Implementing state patterns to keep app updates efficient.",
+      role: "Software Developer",
+      place: "Nighwan Technology",
+      time: "Jan 2023 - Feb 2025",
+      text: "Engineered scalable web applications using the MERN stack (MongoDB, Express, React, Node.js). Structured modular frontend architectures with Tailwind CSS, optimized database queries, and implemented advanced state management solutions to maximize runtime performance.",
     },
     {
-      role: "Web Developer Assistant",
-      place: "Digital Agency Space",
-      time: "2024 - 2025",
-      text: "Built standard site layouts directly from design assets using clean CSS grids and Tailwind utilities.",
+      role: "Software Trainee",
+      place: "DOT Web Logic Solutions",
+      time: "Feb 2022 - Dec 2022",
+      text: "Collaborated on building responsive web interfaces using HTML, CSS, JavaScript, and Bootstrap. Focused on converting design wireframes into pixel-perfect layouts while learning modern backend development fundamentals.",
     },
   ];
 
