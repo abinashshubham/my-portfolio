@@ -1,3 +1,4 @@
+// src/components/HeroSection.jsx
 import React from "react";
 import { ArrowRight, Download } from "lucide-react";
 import "./HeroSection.css";
@@ -13,6 +14,7 @@ const HeroSection = () => {
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full blur-[120px] pointer-events-none hero-blob-bottom"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
         {/* Left Side Branding info */}
         <div
           className="lg:col-span-7 space-y-6 text-center lg:text-left"
@@ -59,25 +61,19 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Right Side Frame Layout */}
         {/* Right Side Frame Layout - Optimized Custom Circle Portal */}
         <div className="lg:col-span-5 flex justify-center relative" data-aos="fade-left">
-          {/* Outer Cyberpunk Neon Shadow Ring */}
           <div className="relative w-72 h-72 sm:w-96 sm:h-96 rounded-full bg-gradient-to-tr from-[#111a2e] to-[#1a294d] border border-gray-800/80 p-3 shadow-2xl flex items-center justify-center transition-all duration-300 hover:border-[#00f2fe]/40 shadow-[#00f2fe]/5">
-            
-            {/* Ambient Inner Shadow Ring */}
             <div className="w-full h-full rounded-full bg-[#0a0f1d] border border-gray-800/40 overflow-hidden relative flex items-center justify-center">
-              
-              {/* Dynamic Image Link Mapped to Github Pages Subfolders */}
               <img 
                 src={`${import.meta.env.BASE_URL}profile.png`} 
                 alt="Abinash Shubham Profile Avatar" 
-                className="w-full h-full object-cover select-none scale-[1.085] transition-transform duration-500 hover:scale-[1.1] pointer-events-none"
+                className="hero-profile-image"
               />
-              
             </div>
           </div>
         </div>
+
       </div>
     </section>
   );

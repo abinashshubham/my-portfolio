@@ -1,3 +1,5 @@
+/* src/components/HeroSection.css */
+
 /* Background Accent Ambient Glow Positions */
 .hero-blob-top {
   transform: translateX(-50%);
@@ -26,6 +28,17 @@
   animation: typing-effect 8s steps(15) infinite;
   overflow: hidden;
   border-right: 3px solid #00f2fe;
+}
+
+/* Isolated Image Asset Presentation Classes */
+.hero-profile-image {
+  @apply w-full h-full object-cover select-none pointer-events-none;
+  transform: scale(1.085);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-profile-image:hover {
+  transform: scale(1.1);
 }
 
 /* Keyframes controlling step-by-step lettering typing loop */
