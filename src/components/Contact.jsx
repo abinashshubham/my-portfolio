@@ -4,12 +4,13 @@ import { Mail, MapPin, Send } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <section id="contact" className="scroll-mt-28 py-12" data-aos="fade-up">
+    <section id="contact" className="scroll-target pt-16" data-aos="fade-up">
       <div className="mb-12 text-center lg:text-left">
         <span className="text-xs font-bold uppercase tracking-widest text-[#00f2fe] bg-[#00f2fe]/10 px-3 py-1.5 rounded-lg">
           Connect
         </span>
-        <h2 className="text-3xl sm:text-4xl font-black text-white mt-4 tracking-tight">Initiate A Project</h2>
+        <h2 className="text-3xl sm:text-5xl font-black text-white mt-4 tracking-tight">Initiate A Project</h2>
+        <div className="h-1 w-20 bg-gradient-to-r from-[#00f2fe] to-[#4facfe] mt-6 rounded-full mx-auto lg:mx-0"></div>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">

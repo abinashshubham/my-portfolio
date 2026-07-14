@@ -36,7 +36,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="scroll-target py-16" data-aos="fade-up">
+    <section id="about" className="scroll-target pt-16" data-aos="fade-up">
       {/* Section Sub-Header */}
       <div className="text-center lg:text-left mb-16">
         <span className="text-xs font-bold uppercase tracking-widest text-[#00f2fe] bg-[#00f2fe]/10 px-3 py-1.5 rounded-lg">

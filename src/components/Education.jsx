@@ -1,4 +1,3 @@
-// src/components/Education.jsx
 import React from "react";
 import "./Education.css";
 
@@ -31,7 +30,7 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="scroll-target py-16" data-aos="fade-up">
+    <section id="education" className="scroll-target pt-16" data-aos="fade-up">
       <div className="mb-12 text-center lg:text-left">
         <span className="text-xs font-bold uppercase tracking-widest text-[#00f2fe] bg-[#00f2fe]/10 px-3 py-1.5 rounded-lg">
           Qualifications
