@@ -1,6 +1,6 @@
-// src/components/Header.jsx
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import "./Header.css";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +27,7 @@ const Header = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-[#0a0f1d]/70 backdrop-blur-xl border-b border-gray-800/60 transition-all duration-300">
+    <nav className="fixed top-0 left-0 w-full z-50 border-b border-gray-800/60 transition-all duration-300 nav-blur-container">
       <div className="max-w-7xl mx-auto px-5 sm:px-9 md:px-7 lg:px-9 flex items-center justify-between h-20">
         {/* Branding Logo Signature */}
         <a
@@ -43,7 +43,7 @@ const Header = () => {
             <a
               key={item.name}
               href={item.href}
-              className="text-gray-400 hover:text-white relative transition-colors duration-200 after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#00f2fe] hover:after:w-full after:transition-all after:duration-300"
+              className="text-gray-400 hover:text-white text-sm font-semibold tracking-wide desktop-nav-link"
             >
               {item.name}
             </a>
@@ -72,9 +72,9 @@ const Header = () => {
 
       {/* Immersive Full-Screen Mobile Drawer Overlay */}
       <div
-        className={`fixed inset-0 w-screen h-screen bg-[#0a0f1d] flex flex-col justify-center items-center px-8 transition-all duration-400 ease-in-out md:hidden z-40 ${
+        className={`fixed inset-0 w-screen h-screen flex flex-col justify-center items-center px-8 md:hidden z-40 mobile-nav-overlay ${
           isOpen
-            ? "opacity-100 translate-x-0 visible"
+            ? "opacity-100 translate-x-0 visible mobile-nav-overlay-active"
             : "opacity-0 translate-x-full invisible pointer-events-none"
         }`}
       >
@@ -82,26 +82,18 @@ const Header = () => {
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-72 h-72 bg-[#00f2fe]/5 rounded-full blur-[100px] pointer-events-none"></div>
 
         <div className="flex flex-col items-center justify-center space-y-6 w-full text-center">
-          {navItems.map((item, index) => (
+          {navItems.map((item) => (
             <a
               key={item.name}
               href={item.href}
               onClick={() => setIsOpen(false)}
-              style={{ transitionDelay: isOpen ? `${index * 50}ms` : '0ms' }}
-              className={`text-2xl font-bold tracking-tight text-gray-300 hover:text-[#00f2fe] transition-all duration-300 transform ${
-                isOpen ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
-              }`}
+              className="text-2xl font-bold tracking-tight text-gray-300 hover:text-[#00f2fe] transition-all duration-300 transform mobile-link-item"
             >
               {item.name}
             </a>
           ))}
-          
-          <div 
-            className={`pt-8 border-t border-gray-800/60 w-full max-w-[240px] transition-all duration-300 transform ${
-              isOpen ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
-            }`}
-            style={{ transitionDelay: isOpen ? `${navItems.length * 50}ms` : '0ms' }}
-          >
+
+          <div className="pt-8 border-t border-gray-800/60 w-full max-w-[240px] transition-all duration-300 transform mobile-cta-wrapper">
             <a
               href="#contact"
               onClick={() => setIsOpen(false)}
