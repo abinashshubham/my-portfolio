@@ -51,6 +51,8 @@ const Contact = () => {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
         {/* Info Blocks */}
         <div className="lg:col-span-4 space-y-4">
+          
+          {/* Direct Mail Card (Now Fully Interactive) */}
           <div className="bg-[#111a2e] border border-gray-800/80 p-6 rounded-2xl flex items-center gap-4">
             <div className="p-3.5 rounded-xl bg-[#0a0f1d] text-[#00f2fe] border border-gray-800 shrink-0">
               <Mail size={20} />
@@ -59,13 +61,16 @@ const Contact = () => {
               <span className="text-[10px] text-gray-500 font-bold uppercase tracking-wider block">
                 Direct Mail
               </span>
-              <p className="text-sm font-bold text-gray-200 mt-0.5">
+              <a 
+                href="mailto:abinashshubham@gmail.com?subject=Project%20Inquiry%20from%20Portfolio"
+                className="text-sm font-bold text-gray-200 mt-0.5 hover:text-[#00f2fe] transition-colors duration-200 block"
+              >
                 abinashshubham@gmail.com
-              </p>
+              </a>
             </div>
           </div>
 
-          {/* Clean Phone Component Block */}
+          {/* Voice Contact Card */}
           <div className="bg-[#111a2e] border border-gray-800/80 p-6 rounded-2xl flex items-center gap-4">
             <div className="p-3.5 rounded-xl bg-[#0a0f1d] text-[#2575fc] border border-gray-800 shrink-0">
               <Phone size={20} />
@@ -75,7 +80,7 @@ const Contact = () => {
                 Voice Contact
               </span>
               <a 
-                href="tel:+918789935741" 
+                href="tel:+918789935741"
                 className="text-sm font-bold text-gray-200 mt-0.5 hover:text-[#00f2fe] transition-colors duration-200"
               >
                 +91 87899 35741
@@ -83,6 +88,69 @@ const Contact = () => {
             </div>
           </div>
 
+          {/* GitHub Portal Card */}
+          <div className="bg-[#111a2e] border border-gray-800/80 p-6 rounded-2xl flex items-center gap-4">
+            <div className="p-3.5 rounded-xl bg-[#0a0f1d] text-[#00f2fe] border border-gray-800 shrink-0">
+              <svg
+                className="w-5 h-5"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+              </svg>
+            </div>
+            <div>
+              <span className="text-[10px] text-gray-500 font-bold uppercase tracking-wider block">
+                GitHub Repository
+              </span>
+              <a 
+                href="https://github.com/abinashshubham" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-sm font-bold text-gray-200 mt-0.5 hover:text-[#00f2fe] transition-colors duration-200 block"
+              >
+                github.com/abinashshubham
+              </a>
+            </div>
+          </div>
+
+          {/* LinkedIn Portal Card */}
+          <div className="bg-[#111a2e] border border-gray-800/80 p-6 rounded-2xl flex items-center gap-4">
+            <div className="p-3.5 rounded-xl bg-[#0a0f1d] text-[#4facfe] border border-gray-800 shrink-0">
+              <svg
+                className="w-5 h-5"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </div>
+            <div>
+              <span className="text-[10px] text-gray-500 font-bold uppercase tracking-wider block">
+                Professional Network
+              </span>
+              <a 
+                href="https://linkedin.com/in/abinashshubham" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-sm font-bold text-gray-200 mt-0.5 hover:text-[#4facfe] transition-colors duration-200 block"
+              >
+                linkedin.com/in/abinashshubham
+              </a>
+            </div>
+          </div>
+
+          {/* Operational Base Card */}
           <div className="bg-[#111a2e] border border-gray-800/80 p-6 rounded-2xl flex items-center gap-4">
             <div className="p-3.5 rounded-xl bg-[#0a0f1d] text-[#4facfe] border border-gray-800 shrink-0">
               <MapPin size={20} />
