@@ -1,6 +1,7 @@
 import React from "react";
 import { Award, ShieldCheck, ExternalLink } from "lucide-react";
 import aiCertImg from "../assets/ai-cert.png";
+import bsdmCertImg from "../assets/bsdm-cert.png";
 
 const Certificates = () => {
   const achievements = [
@@ -12,18 +13,11 @@ const Certificates = () => {
       viewLink: aiCertImg
     },
     {
-      title: "Advanced Frontend Architecture",
-      issuer: "Meta Developer Institute",
-      date: "2025",
-      id: "META-9921",
-      viewLink: "#"
-    },
-    {
-      title: "Responsive UI Design Specialist",
-      issuer: "Google Professional Systems",
-      date: "2024",
-      id: "GOOG-4410",
-      viewLink: "#"
+      title: "Data Analyst Professional Certificate",
+      issuer: "STL Academy | BSDM RTD",
+      date: "August 2023",
+      id: "STL/RTD/P/11",
+      viewLink: bsdmCertImg
     },
   ];
 
