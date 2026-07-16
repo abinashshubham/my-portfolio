@@ -177,7 +177,7 @@ const Contact = () => {
                 <input
                   type="text"
                   name="name"
-                  className="w-full bg-[#0a0f1d] border border-gray-800 focus:border-[#00f2fe] rounded-xl px-4 py-3 text-sm text-white focus:outline-hidden transition-colors duration-300"
+                  className="w-full bg-[#0a0f1d] border border-gray-800 focus:border-[#00f2fe] rounded-xl px-4 py-3 my-1 text-sm text-white focus:outline-hidden transition-colors duration-300"
                   required
                 />
               </div>
@@ -188,7 +188,7 @@ const Contact = () => {
                 <input
                   type="email"
                   name="email"
-                  className="w-full bg-[#0a0f1d] border border-gray-800 focus:border-[#00f2fe] rounded-xl px-4 py-3 text-sm text-white focus:outline-hidden transition-colors duration-300"
+                  className="w-full bg-[#0a0f1d] border border-gray-800 focus:border-[#00f2fe] rounded-xl px-4 py-3 my-1 text-sm text-white focus:outline-hidden transition-colors duration-300"
                   required
                 />
               </div>
@@ -200,7 +200,7 @@ const Contact = () => {
               <textarea
                 name="message"
                 rows="5"
-                className="w-full bg-[#0a0f1d] border border-gray-800 focus:border-[#00f2fe] rounded-xl px-4 py-3 text-sm text-white focus:outline-hidden transition-colors duration-300 resize-none"
+                className="w-full bg-[#0a0f1d] border border-gray-800 focus:border-[#00f2fe] rounded-xl px-4 py-3 my-1 text-sm text-white focus:outline-hidden transition-colors duration-300 resize-none"
                 required
               ></textarea>
             </div>
