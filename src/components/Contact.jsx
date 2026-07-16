@@ -195,7 +195,7 @@ const Contact = () => {
             </div>
             <div className="space-y-2">
               <label className="text-[11px] font-bold uppercase tracking-wider text-gray-400">
-                Project Requirements Message
+                &nbsp;Project Requirements Message
               </label>
               <textarea
                 name="message"
