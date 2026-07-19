@@ -8,7 +8,7 @@ const Certificates = () => {
     {
       title: "Generative AI for All Program",
       issuer: "Physics Wallah | Microsoft",
-      date: "June 2025",
+      date: "June 2026",
       id: "b6acefe5-c5a2-4173-b712-12cf40865617",
       viewLink: aiCertImg
     },
