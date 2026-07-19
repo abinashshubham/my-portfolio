@@ -4,36 +4,52 @@ import "./Projects.css";
 
 const Projects = () => {
   const catalog = [
-    {
-      title: "YUMLY - Food Delivery Platform",
-      tech: [
-        "React.js",
-        "Vite",
-        "Node.js",
-        "Express.js",
-        "MongoDB",
-        "Render",
-        "GitHub",
-      ],
-      desc: "A full-stack food delivery application featuring a dynamic product catalog, multi-vendor cart management, real-time price computations, and a secure checkout flow backed by a robust RESTful API architecture.",
-      liveLink: "https://food-del-frontend-52rw.onrender.com/",
-      codeLink: "https://github.com/abinashshubham/food-del",
-    },
-    {
-      title: "WEATHER AI - Meteorological Dashboard",
-      tech: ["React.js", "Vite", "CSS", "Context API", "Git", "GitHub Pages"],
-      desc: "A responsive weather analytics engine providing real-time conditions coupled with AI-driven summaries to deliver instant context-specific recommendations across all device viewports.",
-      liveLink: "https://abinashshubham.github.io/weather-app/",
-      codeLink: "https://github.com/abinashshubham/weather-app",
-    },
-    {
-      title: "Premium Enterprise Portfolio",
-      tech: ["React.js", "Vite", "Tailwind CSS", "AOS Engine"],
-      desc: "A high-performance personal portfolio and enterprise showcase application featuring a customized cyberpunk neon aesthetic, smooth scroll-synchronized entry animations, and fully modular frontend components.",
-      liveLink: "https://abinashshubham.github.io/my-portfolio/",
-      codeLink: "https://github.com/abinashshubham/my-portfolio",
-    },
-  ];
+  {
+    title: "INTERVIEWIQ COACH - AI Technical Interview Simulator",
+    tech: [
+      "React.js",
+      "Vite",
+      "Cloudflare Workers",
+      "Hugging Face API",
+      "Framer Motion",
+      "React Router",
+      "Axios",
+      "GitHub Pages",
+    ],
+    desc: "A serverless AI technical interview platform utilizing an open-source LLM orchestrator via a secure Cloudflare Workers edge proxy. Features dynamic role-specific configuration pipelines, real-time user evaluations, and analytics-driven engineering performance feedback.",
+    liveLink: "https://abinashshubham.github.io/interviewiq-coach/",
+    codeLink: "https://github.com/abinashshubham/interviewiq-coach",
+  },
+  {
+    title: "YUMLY - Food Delivery Platform",
+    tech: [
+      "React.js",
+      "Vite",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Render",
+      "GitHub",
+    ],
+    desc: "A full-stack food delivery application featuring a dynamic product catalog, multi-vendor cart management, real-time price computations, and a secure checkout flow backed by a robust RESTful API architecture.",
+    liveLink: "https://food-del-frontend-52rw.onrender.com/",
+    codeLink: "https://github.com/abinashshubham/food-del",
+  },
+  {
+    title: "WEATHER AI - Meteorological Dashboard",
+    tech: ["React.js", "Vite", "CSS", "Context API", "Git", "GitHub Pages"],
+    desc: "A responsive weather analytics engine providing real-time conditions coupled with AI-driven summaries to deliver instant context-specific recommendations across all device viewports.",
+    liveLink: "https://abinashshubham.github.io/weather-app/",
+    codeLink: "https://github.com/abinashshubham/weather-app",
+  },
+  {
+    title: "Premium Enterprise Portfolio",
+    tech: ["React.js", "Vite", "Tailwind CSS", "AOS Engine"],
+    desc: "A high-performance personal portfolio and enterprise showcase application featuring a customized cyberpunk neon aesthetic, smooth scroll-synchronized entry animations, and fully modular frontend components.",
+    liveLink: "https://abinashshubham.github.io/my-portfolio/",
+    codeLink: "https://github.com/abinashshubham/my-portfolio",
+  },
+];
 
   return (
     <section id="projects" className="scroll-target pt-16" data-aos="fade-up">
