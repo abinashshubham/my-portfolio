@@ -27,7 +27,6 @@ const Certificates = () => {
     id: "1e1c61cd09971352913"
     viewLink: be10xCertImg 
   }
-];
   ];
 
   return (
