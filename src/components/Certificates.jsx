@@ -6,27 +6,27 @@ import be10xCertImg from "../assets/be10X-cert.png";
 
 const Certificates = () => {
   const achievements = [
-  {
-    title: "Generative AI for All Program",
-    issuer: "Physics Wallah | Microsoft",
-    date: "June 2026",
-    id: "b6acefe5-c5a2-4173-b712-12cf40865617",
-    viewLink: aiCertImg
-  },
-  {
-    title: "Data Analyst Professional Certificate",
-    issuer: "STL Academy | BSDM RTD",
-    date: "August 2023",
-    id: "STL/RTD/P/11",
-    viewLink: bsdmCertImg
-  },
-  {
-    title: "AI Tools and ChatGPT Workshop",
-    issuer: "be10x",
-    date: "May 24th, 2026",
-    id: "1e1c61cd09971352913"
-    viewLink: be10xCertImg 
-  }
+    {
+      title: "Generative AI for All Program",
+      issuer: "Physics Wallah | Microsoft",
+      date: "June 2026",
+      id: "b6acefe5-c5a2-4173-b712-12cf40865617",
+      viewLink: aiCertImg,
+    },
+    {
+      title: "AI Tools and ChatGPT Workshop",
+      issuer: "be10x",
+      date: "May 24th, 2026",
+      id: "1e1c61cd09971352913",
+      viewLink: be10xCertImg,
+    },
+    {
+      title: "Data Analyst Professional Certificate",
+      issuer: "STL Academy | BSDM RTD",
+      date: "August 2023",
+      id: "STL/RTD/P/11",
+      viewLink: bsdmCertImg,
+    },
   ];
 
   return (
@@ -63,17 +63,17 @@ const Certificates = () => {
                   <ShieldCheck size={10} /> Verified
                 </span>
               </div>
-              
+
               <h3 className="text-lg font-bold text-white tracking-tight">
                 {cert.title}
               </h3>
               <p className="text-sm text-gray-400">{cert.issuer}</p>
-              
+
               <div className="flex flex-wrap items-center justify-between gap-2 pt-2">
                 <code className="text-[11px] bg-[#0a0f1d] border border-gray-800/80 px-2.5 py-1 rounded-lg text-[#4facfe] font-mono break-all">
                   ID: {cert.id}
                 </code>
-                
+
                 {/* Interactive View Document Trigger */}
                 <a
                   href={cert.viewLink}
