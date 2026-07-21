@@ -2,23 +2,32 @@ import React from "react";
 import { Award, ShieldCheck, ExternalLink } from "lucide-react";
 import aiCertImg from "../assets/ai-cert.png";
 import bsdmCertImg from "../assets/bsdm-cert.png";
+import be10xCertImg from "../assets/be10X-cert.png";
 
 const Certificates = () => {
   const achievements = [
-    {
-      title: "Generative AI for All Program",
-      issuer: "Physics Wallah | Microsoft",
-      date: "June 2026",
-      id: "b6acefe5-c5a2-4173-b712-12cf40865617",
-      viewLink: aiCertImg
-    },
-    {
-      title: "Data Analyst Professional Certificate",
-      issuer: "STL Academy | BSDM RTD",
-      date: "August 2023",
-      id: "STL/RTD/P/11",
-      viewLink: bsdmCertImg
-    },
+  {
+    title: "Generative AI for All Program",
+    issuer: "Physics Wallah | Microsoft",
+    date: "June 2026",
+    id: "b6acefe5-c5a2-4173-b712-12cf40865617",
+    viewLink: aiCertImg
+  },
+  {
+    title: "Data Analyst Professional Certificate",
+    issuer: "STL Academy | BSDM RTD",
+    date: "August 2023",
+    id: "STL/RTD/P/11",
+    viewLink: bsdmCertImg
+  },
+  {
+    title: "AI Tools and ChatGPT Workshop",
+    issuer: "be10x",
+    date: "May 24th, 2026",
+    id: "1e1c61cd09971352913"
+    viewLink: be10xCertImg 
+  }
+];
   ];
 
   return (
