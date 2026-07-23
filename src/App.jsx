@@ -3,15 +3,15 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 // Importing All Functional Modules Safely
-import Header from './components/Header';
-import HeroSection from './components/HeroSection';
-import About from './components/About';
-import Education from './components/Education';
-import Experience from './components/Experience';
-import Certificates from './components/Certificates';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Header from './components/Header/Header';
+import HeroSection from './components/HeroSection/HeroSection';
+import About from './components/About/About';
+import Education from './components/Education/Education';
+import Experience from './components/Experience/Experience';
+import Certificates from './components/Certificates/Certificates';
+import Projects from './components/Projects/Projects';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 function App() {
@@ -38,8 +38,7 @@ function App() {
       </main>
       
       <Footer />
-
-      {/* 👈 2. Add Floating Side Scroll Button */}
+      
       <ScrollToTop />
     </div>
   );

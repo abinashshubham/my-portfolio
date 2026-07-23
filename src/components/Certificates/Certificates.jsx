@@ -1,8 +1,8 @@
 import React from "react";
 import { Award, ShieldCheck, ExternalLink } from "lucide-react";
-import aiCertImg from "../assets/ai-cert.png";
-import bsdmCertImg from "../assets/bsdm-cert.png";
-import be10xCertImg from "../assets/be10X-cert.png";
+import aiCertImg from "../../assets/ai-cert.png"; 
+import bsdmCertImg from "../../assets/bsdm-cert.png";
+import be10xCertImg from "../../assets/be10X-cert.png";
 
 const Certificates = () => {
   const achievements = [
