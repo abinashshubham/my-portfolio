@@ -12,6 +12,7 @@ import Certificates from './components/Certificates';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 function App() {
   useEffect(() => {
@@ -23,7 +24,7 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#111827] text-white selection:bg-[#0c7fac] selection:text-white">
+    <div className="min-h-screen bg-[#111827] text-white selection:bg-[#0c7fac] selection:text-white relative">
       <Header />
       <HeroSection />
       
@@ -37,6 +38,9 @@ function App() {
       </main>
       
       <Footer />
+
+      {/* 👈 2. Add Floating Side Scroll Button */}
+      <ScrollToTop />
     </div>
   );
 }

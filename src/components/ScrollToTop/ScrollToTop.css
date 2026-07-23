@@ -1,0 +1,53 @@
+.scroll-to-top-container {
+  position: fixed;
+  bottom: 2rem;
+  right: 1.5rem;
+  z-index: 50;
+}
+
+.scroll-to-top-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  
+  /* Semi-transparent frosted glass effect */
+  background: rgba(12, 127, 172, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(12, 127, 172, 0.3);
+  color: #ffffff;
+  
+  cursor: pointer;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+  
+  /* Smooth Fade In and Fade Out Animation */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s ease, background-color 0.3s ease;
+}
+
+/* Class added when scrolled down */
+.scroll-to-top-btn.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Hover effects */
+.scroll-to-top-btn:hover {
+  background: rgba(12, 127, 172, 0.75);
+  transform: translateY(-3px);
+}
+
+.scroll-to-top-btn:active {
+  transform: scale(0.95);
+}
+
+.scroll-to-top-btn svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
