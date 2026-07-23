@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-// Importing All Functional Modules Safely
 import Header from './components/Header/Header';
 import HeroSection from './components/HeroSection/HeroSection';
 import About from './components/About/About';
@@ -38,7 +37,7 @@ function App() {
       </main>
       
       <Footer />
-      
+
       <ScrollToTop />
     </div>
   );
