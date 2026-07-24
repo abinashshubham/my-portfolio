@@ -1,18 +1,18 @@
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import ReactGA from 'react-ga4';
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import ReactGA from "react-ga4";
 
-import Header from './components/Header/Header';
-import HeroSection from './components/HeroSection/HeroSection';
-import About from './components/About/About';
-import Education from './components/Education/Education';
-import Experience from './components/Experience/Experience';
-import Certificates from './components/Certificates/Certificates';
-import Projects from './components/Projects/Projects';
-import Contact from './components/Contact/Contact';
-import Footer from './components/Footer/Footer';
-import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import Header from "./components/Header/Header";
+import HeroSection from "./components/HeroSection/HeroSection";
+import About from "./components/About/About";
+import Education from "./components/Education/Education";
+import Experience from "./components/Experience/Experience";
+import Certificates from "./components/Certificates/Certificates";
+import Projects from "./components/Projects/Projects";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
   useEffect(() => {
@@ -25,11 +25,21 @@ function App() {
       page: window.location.pathname,
     });
 
+    ReactGA.event({
+      category: "Portfolio",
+      action: "Resume Download",
+    });
+
+    ReactGA.event({
+      category: "Contact",
+      action: "GitHub Click",
+    });
+
     // Initialize AOS
     AOS.init({
       duration: 1000,
       once: true,
-      easing: 'ease-in-out',
+      easing: "ease-in-out",
     });
   }, []);
 
