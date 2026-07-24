@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ReactGA from 'react-ga4';
 
 import Header from './components/Header/Header';
 import HeroSection from './components/HeroSection/HeroSection';
@@ -15,6 +16,16 @@ import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 function App() {
   useEffect(() => {
+    // Initialize Google Analytics
+    ReactGA.initialize("G-QJVN3K3N92");
+
+    // Track page view
+    ReactGA.send({
+      hitType: "pageview",
+      page: window.location.pathname,
+    });
+
+    // Initialize AOS
     AOS.init({
       duration: 1000,
       once: true,
@@ -26,7 +37,7 @@ function App() {
     <div className="min-h-screen bg-[#111827] text-white selection:bg-[#0c7fac] selection:text-white relative">
       <Header />
       <HeroSection />
-      
+
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-32">
         <About />
         <Education />
@@ -35,9 +46,8 @@ function App() {
         <Projects />
         <Contact />
       </main>
-      
-      <Footer />
 
+      <Footer />
       <ScrollToTop />
     </div>
   );
