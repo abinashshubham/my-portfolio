@@ -1,8 +1,9 @@
 import React from "react";
 import { Award, ShieldCheck, ExternalLink } from "lucide-react";
-import aiCertImg from "../../assets/ai-cert.png"; 
+import aiCertImg from "../../assets/ai-cert.png";
 import bsdmCertImg from "../../assets/bsdm-cert.png";
 import be10xCertImg from "../../assets/be10X-cert.png";
+import powerPlatformCertImg from "../../assets/power-platform-cert.png";
 
 const Certificates = () => {
   const achievements = [
@@ -26,6 +27,13 @@ const Certificates = () => {
       date: "August 2023",
       id: "STL/RTD/P/11",
       viewLink: bsdmCertImg,
+    },
+    {
+      title: "Introduction to Microsoft Power Platform",
+      issuer: "Microsoft | Coursera",
+      date: "August 2026",
+      id: "3TIVX11S9UEI",
+      viewLink: powerPlatformCertImg,
     },
   ];
 
