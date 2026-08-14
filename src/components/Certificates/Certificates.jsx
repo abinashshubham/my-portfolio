@@ -8,6 +8,13 @@ import powerPlatformCertImg from "../../assets/power-platform-cert.png";
 const Certificates = () => {
   const achievements = [
     {
+      title: "Introduction to Microsoft Power Platform",
+      issuer: "Microsoft | Coursera",
+      date: "August 2026",
+      id: "3TIVX11S9UEI",
+      viewLink: powerPlatformCertImg,
+    },
+    {
       title: "Generative AI for All Program",
       issuer: "Physics Wallah | Microsoft",
       date: "June 2026",
@@ -27,13 +34,6 @@ const Certificates = () => {
       date: "August 2023",
       id: "STL/RTD/P/11",
       viewLink: bsdmCertImg,
-    },
-    {
-      title: "Introduction to Microsoft Power Platform",
-      issuer: "Microsoft | Coursera",
-      date: "August 2026",
-      id: "3TIVX11S9UEI",
-      viewLink: powerPlatformCertImg,
     },
   ];
 
