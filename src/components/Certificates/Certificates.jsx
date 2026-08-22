@@ -4,9 +4,17 @@ import aiCertImg from "../../assets/ai-cert.png";
 import bsdmCertImg from "../../assets/bsdm-cert.png";
 import be10xCertImg from "../../assets/be10X-cert.png";
 import powerPlatformCertImg from "../../assets/power-platform-cert.png";
+import customSolutionsCertImg from "../../assets/custom-solutions-cert.png";
 
 const Certificates = () => {
   const achievements = [
+    {
+      title: "Use Power Platform for Custom & Automated Solutions",
+      issuer: "Microsoft | Coursera",
+      date: "August 2026",
+      id: "LYU212JC2QIK",
+      viewLink: customSolutionsCertImg,
+    },
     {
       title: "Introduction to Microsoft Power Platform",
       issuer: "Microsoft | Coursera",
@@ -16,7 +24,7 @@ const Certificates = () => {
     },
     {
       title: "Generative AI for All Program",
-      issuer: "Physics Wallah | Microsoft",
+      issuer: "Microsoft | Physics Wallah",
       date: "June 2026",
       id: "12cf40865617",
       viewLink: aiCertImg,
