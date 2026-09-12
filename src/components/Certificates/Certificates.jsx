@@ -5,9 +5,33 @@ import bsdmCertImg from "../../assets/bsdm-cert.png";
 import be10xCertImg from "../../assets/be10X-cert.png";
 import powerPlatformCertImg from "../../assets/power-platform-cert.png";
 import customSolutionsCertImg from "../../assets/custom-solutions-cert.png";
+import pl900PracticeExamCertImg from "../../assets/pl900-practice-exam-cert.png";
+import microsoftPL900CertImg from "../../assets/microsoft-pl900-cert.png";
+import powervirtualAgentsCertImg from "../../assets/power-virtual-agents-cert.png";
 
 const Certificates = () => {
   const achievements = [
+    {
+      title: "Microsoft Power Platform Fundamentals PL-900 Exam Prep",
+      issuer: "Microsoft | Coursera",
+      date: "September 2026",
+      id: "GWRUVVTGQWIF",
+      viewLink: microsoftPL900CertImg,
+    },
+    {
+      title: "The PL-900 Practice Exam",
+      issuer: "Microsoft | Coursera",
+      date: "September 2026",
+      id: "RCQR9PJF7LOK",
+      viewLink: pl900PracticeExamCertImg,
+    },
+    {
+      title: "Power BI & Power Virtual Agents",
+      issuer: "Microsoft | Coursera",
+      date: "September 2026",
+      id: "08W4WAU9QBYZ",
+      viewLink: powervirtualAgentsCertImg,
+    },
     {
       title: "Use Power Platform for Custom & Automated Solutions",
       issuer: "Microsoft | Coursera",
